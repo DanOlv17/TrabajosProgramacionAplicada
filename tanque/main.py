@@ -2,7 +2,7 @@
 # Realizar la simulación de la variación interactiva del volumen de un tanque de agua. 
 # Hay que visualizar el tanque y su volumen actual. 
 # Además, en una gráfica, visualizar el histórico de los volúmenes.
-
+label_advertencia["El nivel del agua en el tanque alcanzo el maximo"]
 
 import tkinter as tk
 import time,math

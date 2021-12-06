@@ -105,6 +105,8 @@ label_volumen.place(x=0, y=200)
 
 
 tiempo_global= time.time()
+label_advertencia= tk.Label(canvas, text=capacidad_actual)
+label_advertencia.place(x=0, y=10)
 label_tiempo = tk.Label(canvas, text=tiempo_global)
 label_tiempo.place(x=0, y=0)
 def actualizacion_periodica():
@@ -125,6 +127,9 @@ def actualizacion_periodica():
             capacidad_actual += tiempo*S2*1
         label_volumen['text'] =  str(capacidad_actual)
         actualiza_nivel()
+
+          
+
 
 
 label_tiempo.after(100, actualizacion_periodica)
